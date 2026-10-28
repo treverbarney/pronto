@@ -12,23 +12,23 @@ const FALLBACK_MESSAGES = enMessages as Awaited<ReturnType<typeof getMessages>>
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Pronto — Business Management for Service SMBs',
+  title: 'Dino Booking — Smart Scheduling for Service Businesses',
   description:
-    'Self-hosted POS, CRM, Inventory & Omnichannel Notifications. Your data, your server. Zero commission. One command install.',
+    'Dino Booking: Beautiful public booking pages, staff calendars, CRM, and AI-powered scheduling for tattoo studios, salons, and pros. Self-hosted, zero commission.',
   keywords: [
-    'open source POS',
-    'self-hosted CRM',
+    'dino booking',
     'appointment booking',
-    'Telegram notifications',
-    'salon management software',
-    'small business management',
+    'tattoo studio software',
+    'salon management',
+    'self-hosted calendar',
+    'AI booking',
   ],
   // PWA
   manifest: '/site.webmanifest',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Pronto',
+    title: 'Dino Booking',
   },
   formatDetection: {
     telephone: false,
@@ -42,16 +42,18 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    images: [{ url: 'https://trypronto.app/og-image.png', width: 1200, height: 630 }],
+    title: 'Dino Booking',
+    description: 'Smart booking and workspace for service businesses',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['https://trypronto.app/og-image.png'],
+    images: ['/og-image.png'],
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#2563eb',
+  themeColor: '#88a494',
   width: 'device-width',
   initialScale: 1,
   minimumScale: 1,
